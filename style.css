@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Kaushan+Script&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+font-family: 'Poppins', sans-serif;
+}
+.containers{
+    width: 97%;
+    height: 100vh;
+    background-color: #6FB2FF;
+    display: flex;
+
+justify-content: center;
+
+align-items: center;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+padding: 25px;
+}
+.card img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    align-self: center;
+}
+.h3{   
+    text-align: center;
+    font-weight: bold;
+    font-weight: 200;
+    font-size: 18px;
+
+}   
+
+.bttn{
+        background-color: #6FB2FF;
+        color:white
+}
+.bttn:hover{
+    background-color: #ffF;
+    color: black;
+}
+::-webkit-input-placeholder{
+    opacity: 5;
+}
