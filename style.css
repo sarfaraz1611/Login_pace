@@ -52,8 +52,8 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-      background:
-    linear-gradient(to right, #5ea7fa,#6FB2FF)
+      background-color:gray
+   
 }
 
 .card{
@@ -99,7 +99,7 @@ border: solid #E9ECEF 1px;
 }
 input::placeholder {
     font-size: 10px;
-    font-weight: 600;
+    /* font-weight: 200; */
   
     opacity: 0.5;
     /* font-size: 0.9rem; */
@@ -109,12 +109,17 @@ input::placeholder {
     border: none;
 margin-bottom: 20px;
 margin-top:10px ;
-background-color: #3591fa;
+background-color: gray;
 padding: 5px;
 border-radius: 4px;
 color: white;
 font-size: 10px;
 font-weight: 300;
+}
+.imr {
+    width: 80px;
+margin-left: auto;
+margin-right: auto;
 }
 
 @media  (100px <= width <= 400px){ 
