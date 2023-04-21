@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Kaushan+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Kaushan+Script&display=swap');
 body{
     display: flex;
     justify-content: center;
@@ -38,14 +38,20 @@ padding: 25px;
 
 }   
 
-.bttn{
-        background-color: #6FB2FF;
-        color:white
+
+*/
+/* ::-webkit-input-placeholder{
+    opacity: .2;
+    color: gray;
+} */
+
+body{
+    background:
+    linear-gradient(to right, #5ea7fa,#6FB2FF)
+   
 }
-.bttn:hover{
-    background-color: #ffF;
-    color: black;
-}
-::-webkit-input-placeholder{
-    opacity: 5;
+input.form-control::placeholder {
+    opacity: 0.5;
+    font-size: 0.9rem;
+   
 }

@@ -7,76 +7,92 @@
     <title>Login page</title>
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="containers">
-      <div class="card rounded">
-        <img src="./img/logo.jpg" alt="logo" class="img-fluid" />
-        <p class="h3">Login</p>
-        <div class="input-group mb-3 mr-sm-2 rounded">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-person"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-              </svg>
+  <body
+    class="border-5 border-end border-start border-dark d-flex justify-content-center align-items-center"
+    style="min-height: 100vh">
+    <div
+      class="card rounded p-5"
+      style="
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      ">
+      <img src="./img/logo.jpg" alt="logo" class="img-fluid" />
+
+      <p class="h3 mt-2 text-center fs-5">Login</p>
+
+      <div class="d-flex flex-column mt-2">
+        <div class="col-auto mb-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div
+                class="input-group-text justify-content-center"
+                style="height: 28px; width: 40px">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              style="height: 28px"
+              placeholder="Username" />
+          </div>
+        </div>
+
+        <div class="form-outline mb-2">
+          <div class="col-auto">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div
+                  class="input-group-text justify-content-center"
+                  style="height: 28px; width: 40px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="15  "
+                    fill="currentColor"
+                    class="bi bi-lock"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                  </svg>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                style="height: 28px"
+                placeholder="Password" />
             </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            id="inlineFormInputGroupUsername2"
-            placeholder="Username" />
         </div>
-        <div class="input-group mb-4 mr-sm-2">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="15  "
-                fill="currentColor"
-                class="bi bi-lock"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
-              </svg>
-            </div>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            id="inlineFormInputGrouppassword"
-            placeholder="Password" />
-        </div>
-        <button type="button" class="btn bttn rounded btn-sm mb-4">
+      </div>
+
+      <div class="d-grid gap-2 mt-2">
+        <button class="btn btn-primary rounded btn-sm mb-4" type="button">
           Login
         </button>
       </div>
     </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
   </body>
 </html>
