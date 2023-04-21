@@ -60,7 +60,7 @@ overflow: hidden;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
-    height: 60%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -114,20 +114,20 @@ padding: 5px;
 border-radius: 4px;
 color: white;
 font-size: 10px;
-font-weight: 100;
+font-weight: 300;
 }
 
 @media  (100px <= width <= 400px){ 
  
 .imr{
-    width: 150px;
+    width: 200px;
 }
     .card {
         padding: 15px;
     }
 .user {
     
-    width: 150px;
+    width: 180px;
   
 }
 }
